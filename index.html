@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <style type="text/css">
+      .container{
+  max-width: 400px;
+  margin-top: %;
+  margin-left: 30%;
+  padding: 5%;
+  border: 1px solid maroon;
+ background-color: white;
+ opacity: 89%;
+}
+
+h1 {
+  text-align: center;
+}
+
+label, input, button {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid darkred;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: 2px solid darkred;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#result {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+body{
+  background-image: url("Bp.jpg");
+  background-size: cover;
+
+}
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 style="color: Navy;"><b><u>BODY</u> <u>MASS</u> <u>INDEX</u> <h4 style="color: darkred; margin-top: -5px;">Calculator</h1></b></h1>
+      <label> HEIGHT(m)</label><br>
+  <input type="value" id="feet"><br>
+  <label>WEIGHT(Kg)</label><br>
+  <input type="value"  id="m"><br>
+  <button onclick="one()">Submit</button>
+  <p id="result"></p>
+  <p  style="margin-left: -8%;"><img src="bmi.jpg" height="160px" width="460px"></p>
+    </div>
+    <script >
+      function one()
+        {
+          height = document.getElementById(
+            "feet").value;
+          weight = document.getElementById(
+            "m").value;
+        var data = height ;
+         
+          document.getElementById(
+            "result").innerHTML =(weight / (data  *data)) +"-YOUR BMI";
+
+          
+        }
+        
+    </script>
+    
+  </body>
+</html>
